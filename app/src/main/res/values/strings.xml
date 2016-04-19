@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">GetFitApplication</string>
+    <string name="emptyString" />
+    <string name="welcome_message">Welcome,</string>
+    <string name="log_in">Log In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="log_in_message">Welcome to Get Fit. Please log in.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="emptyString2" />
+    <string name="charge">Charge</string>
+    <string name="cancel">Cancel</string>
+    <string name="session_payment_info">Session Payment Info</string>
+    <string name="print_receipt">Print Receipt</string>
+    <string name="current_session">Current Session</string>
+    <string name="start_session">Start Session</string>
+    <string name="logged_in">Logged In:</string>
+    <string name="back_button">Back</string>
+    <string name="save_info">Save Info</string>
+    <string name="billing_address_info">Billing Address</string>
+    <string name="phone_number_info">Phone Number</string>
+    <string name="verify_message">Please Sign To Verify</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="enter_button">Enter</string>
+    <string name="welcome_message1">Welcome! Make sure you are added to the list. When you are ready to begin, click \'Start Session\'.</string>
+
+</resources>
