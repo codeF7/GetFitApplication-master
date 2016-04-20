@@ -12,7 +12,7 @@
     <string name="emptyString2" />
     <string name="charge">Charge</string>
     <string name="cancel">Cancel</string>
-    <string name="session_payment_info">Session Payment Info</string>
+    <string name="session_payment_info">Session Receipt</string>
     <string name="print_receipt">Print Receipt</string>
     <string name="current_session">Current Session</string>
     <string name="start_session">Start Session</string>
@@ -25,5 +25,7 @@
     <string name="cancel_button">Cancel</string>
     <string name="enter_button">Enter</string>
     <string name="welcome_message1">Welcome! Make sure you are added to the list. When you are ready to begin, click \'Start Session\'.</string>
+    <string name="continue_button">Continue</string>
+    <string name="lets_get_fit">Let\'s Get Fit!</string>
 
 </resources>

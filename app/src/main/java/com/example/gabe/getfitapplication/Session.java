@@ -17,19 +17,19 @@ public class Session extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.current_session);
-        String username = getIntent().getStringExtra("Username");
         TextView tv = (TextView) findViewById(R.id.Username1);
+        String username = getIntent().getStringExtra("Username");
         tv.setText("Logged in: " +username);
     }
 
+
     public void onClick(View v)
     {
-        Intent intent = new Intent(Session.this, Payment.class);
+        Intent intent = new Intent(Session.this, Display.class);
         startActivity(intent);
     }
     public boolean onCreateOptionsMenu(Menu menu){
-        // MenuInflater inflater = getMenuInflater();
-        // inflater.inflate(R.menu.menu_settings, menu);
+
         getMenuInflater().inflate(R.menu.menu_settings, menu);
         return true;
     }
@@ -48,25 +48,44 @@ public class Session extends AppCompatActivity {
 
     public void onRadioButtonClicked(View view){
         boolean checked = ((RadioButton) view).isChecked();
+        String str = null;
         switch (view.getId()){
             case R.id.yogaButton:
                 if(checked){
+                    str = "(1) Yoga Session. Duration: 1 hour. \n" +
+                            "\n" +
+                            " Sub-Total.......................... $6.99";
                     Toast.makeText(Session.this, "Added Yoga Session. 1 Hour. $6.99", Toast.LENGTH_SHORT).show();
+                    break;
                 }
             case R.id.cardioButton:
                 if(checked){
+                    str = "(1) Cardio Session. Duration: 30 Minutes. \n" +
+                            "\n" +
+                            " Sub-Total.......................... $4.99";
                     Toast.makeText(Session.this, "Added Cardio Session. 30 Minutes. $4.99", Toast.LENGTH_SHORT).show();
+                    break;
                 }
             case R.id.upperBodyButton:
                 if(checked){
+                    str = "(1) Upper Body Strength. Duration: 45 Minutes.\n\n Sub-Total.......................... $7.99";
                     Toast.makeText(Session.this, "Added Upper Body Strength. 45 Minutes. $7.99", Toast.LENGTH_SHORT).show();
+                    break;
                 }
             case R.id.lowerBodyButton:
                 if(checked){
+                    str = "(1) Lower Body Strength. Duration: 40 Minutes. \n" +
+                            "\n" +
+                            " Sub-Total.......................... $7.99";
                     Toast.makeText(Session.this, "Added Lower Body Strength. 40 Minutes. $7.99", Toast.LENGTH_SHORT).show();
+                    break;
                 }
-        }
 
+        }
+        Intent myIntent = new Intent(Session.this, Receipt.class);
+        myIntent.putExtra("mystring", str);
+        startActivity(myIntent);
 
     }
+
 }

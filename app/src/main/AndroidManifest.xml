@@ -22,6 +22,7 @@
         <activity android:name=".Payment"></activity>
         <activity android:name=".Signature"></activity>
         <activity android:name=".Receipt"></activity>
+        <activity android:name=".Success"></activity>
 
 
     </application>

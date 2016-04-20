@@ -26,6 +26,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/current_session"
+        android:layout_marginTop="40dp"
         android:id="@+id/textView5"
         android:textColor="#ffffff"
         android:layout_alignTop="@+id/login_fragment"
@@ -102,14 +103,7 @@
         android:layout_below="@+id/radioGroup"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Continue"
-        android:id="@+id/continueButton"
-        android:onClick="onClick"
-        android:layout_below="@+id/textView13"
-        android:layout_centerHorizontal="true" />
+
 
 
 </RelativeLayout>

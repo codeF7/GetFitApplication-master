@@ -18,7 +18,7 @@
         android:id="@+id/Blogin"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="100dp"
         android:onClick="onClickDisplay" />
 
     <TextView

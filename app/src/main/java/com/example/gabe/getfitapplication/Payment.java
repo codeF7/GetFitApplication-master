@@ -1,14 +1,12 @@
 package com.example.gabe.getfitapplication;
 
-import android.app.Activity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -17,6 +15,7 @@ public class Payment extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.payment_info);
+
 
     }
     public void onClick(View v)
@@ -30,8 +29,7 @@ public class Payment extends AppCompatActivity {
         startActivity(intent);
     }
     public boolean onCreateOptionsMenu(Menu menu){
-        // MenuInflater inflater = getMenuInflater();
-        // inflater.inflate(R.menu.menu_settings, menu);
+
         getMenuInflater().inflate(R.menu.menu_settings, menu);
         return true;
     }
