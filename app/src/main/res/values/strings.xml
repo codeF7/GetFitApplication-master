@@ -24,8 +24,9 @@
     <string name="verify_message">Please Sign To Verify</string>
     <string name="cancel_button">Cancel</string>
     <string name="enter_button">Enter</string>
-    <string name="welcome_message1">Welcome! Make sure you are added to the list. When you are ready to begin, click \'Start Session\'.</string>
+    <string name="welcome_message1">Welcome! Make sure the client is added below. When you are ready to begin, click \'Start Session\'.</string>
     <string name="continue_button">Continue</string>
     <string name="lets_get_fit">Let\'s Get Fit!</string>
+    <string name="moreCustomers">If you would like to add more customers, click \'Add More Customers\'.</string>
 
 </resources>

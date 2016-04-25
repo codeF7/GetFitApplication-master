@@ -46,20 +46,41 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/customerListView"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="173dp"
-            android:layout_below="@+id/TVusername"
-            android:background="#ffffff" />
+            android:background="#ffffff"
+            android:layout_below="@+id/SessionButton"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/start_session"
             android:id="@+id/SessionButton"
-            android:layout_marginTop="112dp"
-            android:layout_below="@+id/TVusername"
-            android:layout_centerHorizontal="true"
-            android:onClick="onClick" />
+            android:onClick="onClick"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true" />
 
-    </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add More Customers"
+        android:id="@+id/addMoreCustomers"
+        android:onClick="onClickAddMoreCustomers"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="94dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/moreCustomers"
+        android:id="@+id/textView16"
+        android:layout_above="@+id/addMoreCustomers"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="36dp"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>

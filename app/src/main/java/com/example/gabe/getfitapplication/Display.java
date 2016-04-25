@@ -24,10 +24,10 @@ public class Display extends AppCompatActivity {
         TextView tv = (TextView) findViewById(R.id.Username1);
         tv.setText("Logged in: " +username);
 
-        String [] customerList = {username, "Customer 2", "Customer 3"};
+        String [] customerList = {username};
         ListAdapter theAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, customerList);
         ListView theListView = (ListView) findViewById(R.id.customerListView);
-
+        int[] toViewIDs = new int[] {0, R.id.textViewItemTask};
         theListView.setAdapter(theAdapter);
     }
 
@@ -37,8 +37,13 @@ public class Display extends AppCompatActivity {
         Intent intent = new Intent(Display.this, Session.class);
         startActivity(intent);
     }
-    public boolean onCreateOptionsMenu(Menu menu){
 
+    public void onClickAddMoreCustomers(View v)
+    {
+        Intent intent = new Intent(Display.this, AddCustomer.class);
+        startActivity(intent);
+    }
+    public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.menu_settings, menu);
         return true;
     }
