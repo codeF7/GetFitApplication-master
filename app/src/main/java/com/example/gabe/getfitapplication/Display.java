@@ -32,6 +32,8 @@ public class Display extends AppCompatActivity {
     }
 
 
+
+
     public void onClick(View v)
     {
         Intent intent = new Intent(Display.this, Session.class);
