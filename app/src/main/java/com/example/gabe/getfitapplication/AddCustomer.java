@@ -87,6 +87,11 @@ public class AddCustomer extends AppCompatActivity {
         myList.setAdapter(myCursorAdapter);
     }
 
+    public void onClickPhoto(View v){
+        Intent intent = new Intent(AddCustomer.this, Camera.class);
+        startActivity(intent);
+    }
+
 
 
 
